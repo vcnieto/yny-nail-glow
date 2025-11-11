@@ -47,6 +47,12 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        salon: {
+          pink: "hsl(var(--salon-pink))",
+          pinkLight: "hsl(var(--salon-pink-light))",
+          pinkHover: "hsl(var(--salon-pink-hover))",
+          neutral: "hsl(var(--salon-neutral))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
