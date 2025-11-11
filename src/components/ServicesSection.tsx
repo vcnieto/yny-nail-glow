@@ -112,9 +112,7 @@ const ServicesSection = () => {
           className="text-center mt-12"
         >
           <a
-            href="https://wa.me/34663510582?text=Hola,%20me%20gustaría%20conocer%20todos%20los%20precios"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/servicios"
             className="inline-flex items-center text-primary hover:text-accent font-semibold text-lg transition-colors"
           >
             Ver todos los precios

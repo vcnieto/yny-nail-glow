@@ -22,17 +22,25 @@ const Header = () => {
     }
   };
 
+  const handleNav = (id: string) => (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (window.location.pathname === "/") {
+      e.preventDefault();
+      scrollToSection(id);
+    }
+  };
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-background/95 backdrop-blur-md shadow-soft" : "bg-transparent"
+        isScrolled ? "bg-background/95 backdrop-blur-md shadow-soft" : "bg-background/60 backdrop-blur-md border-b border-border/40"
       }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <button
-            onClick={() => scrollToSection("inicio")}
+          <a
+            href="/#inicio"
+            onClick={handleNav("inicio")}
             className="flex items-center space-x-2 group"
           >
             <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -41,40 +49,44 @@ const Header = () => {
             <span className="text-xl font-semibold text-foreground">
               Y&Y Salón de Uñas
             </span>
-          </button>
+          </a>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <button
-              onClick={() => scrollToSection("inicio")}
+            <a
+              href="/#inicio"
+              onClick={handleNav("inicio")}
               className="text-foreground hover:text-primary transition-colors"
             >
               Inicio
-            </button>
-            <button
-              onClick={() => scrollToSection("servicios")}
+            </a>
+            <a
+              href="/servicios"
               className="text-foreground hover:text-primary transition-colors"
             >
               Servicios
-            </button>
-            <button
-              onClick={() => scrollToSection("galeria")}
+            </a>
+            <a
+              href="/#galeria"
+              onClick={handleNav("galeria")}
               className="text-foreground hover:text-primary transition-colors"
             >
               Galería
-            </button>
-            <button
-              onClick={() => scrollToSection("opiniones")}
+            </a>
+            <a
+              href="/#opiniones"
+              onClick={handleNav("opiniones")}
               className="text-foreground hover:text-primary transition-colors"
             >
               Opiniones
-            </button>
-            <button
-              onClick={() => scrollToSection("contacto")}
+            </a>
+            <a
+              href="/#contacto"
+              onClick={handleNav("contacto")}
               className="text-foreground hover:text-primary transition-colors"
             >
               Contacto
-            </button>
+            </a>
           </nav>
 
           {/* CTA Button */}
@@ -109,36 +121,40 @@ const Header = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-background border-t border-border">
           <nav className="container mx-auto px-4 py-6 flex flex-col space-y-4">
-            <button
-              onClick={() => scrollToSection("inicio")}
+            <a
+              href="/#inicio"
+              onClick={handleNav("inicio")}
               className="text-left text-foreground hover:text-primary transition-colors py-2"
             >
               Inicio
-            </button>
-            <button
-              onClick={() => scrollToSection("servicios")}
+            </a>
+            <a
+              href="/servicios"
               className="text-left text-foreground hover:text-primary transition-colors py-2"
             >
               Servicios
-            </button>
-            <button
-              onClick={() => scrollToSection("galeria")}
+            </a>
+            <a
+              href="/#galeria"
+              onClick={handleNav("galeria")}
               className="text-left text-foreground hover:text-primary transition-colors py-2"
             >
               Galería
-            </button>
-            <button
-              onClick={() => scrollToSection("opiniones")}
+            </a>
+            <a
+              href="/#opiniones"
+              onClick={handleNav("opiniones")}
               className="text-left text-foreground hover:text-primary transition-colors py-2"
             >
               Opiniones
-            </button>
-            <button
-              onClick={() => scrollToSection("contacto")}
+            </a>
+            <a
+              href="/#contacto"
+              onClick={handleNav("contacto")}
               className="text-left text-foreground hover:text-primary transition-colors py-2"
             >
               Contacto
-            </button>
+            </a>
             <Button
               onClick={() =>
                 window.open(

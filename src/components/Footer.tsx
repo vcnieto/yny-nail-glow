@@ -78,8 +78,8 @@ const Footer = () => {
               </a>
             </div>
             <div className="space-y-2 text-background/80">
-              <p>C/ José Aguilar, 57-bj izq</p>
-              <p>Valencia</p>
+              <p>C. de José Aguilar</p>
+              <p>Camins al Grau, 46022 Valencia</p>
               <a href="tel:663510582" className="hover:text-primary transition-colors">
                 663 510 582
               </a>

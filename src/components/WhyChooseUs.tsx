@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Award, Heart, Clock, Star } from "lucide-react";
-import salonImage from "@/assets/salon-interior.jpg";
+import salonImage from "@/assets/6.png";
 
 const benefits = [
   {

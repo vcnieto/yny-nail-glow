@@ -89,10 +89,10 @@ const ContactSection = () => {
                     <h3 className="text-xl font-semibold text-foreground mb-2">
                       Dirección
                     </h3>
-                    <p className="text-foreground">C/ José Aguilar, 57-bj izq</p>
-                    <p className="text-foreground">Valencia</p>
+                    <p className="text-foreground">C. de José Aguilar</p>
+                    <p className="text-foreground">Camins al Grau, 46022 Valencia</p>
                     <a
-                      href="https://maps.google.com/?q=C/José+Aguilar+57+Valencia"
+                      href="https://www.google.com/maps/place/Y+%26+Y+Salon+De+U%C3%B1as+-+Valencia/@39.4667226,-0.3400003,75m/data=!3m1!1e3!4m15!1m8!3m7!1s0xd6048f49066c173:0x3b4f88c4ede8be4c!2sC.+de+Jos%C3%A9+Aguilar,+46022+Valencia,+Espa%C3%B1a!3b1!8m2!3d39.4647374!4d-0.3405024!16s%2Fg%2F11kb6b5867!3m5!1s0xd60488b1efa159b:0xf8d2c44b74144d7d!8m2!3d39.4667141!4d-0.3397337!16s%2Fg%2F11gmyw9nk7?hl=es-ES&entry=ttu&g_ep=EgoyMDI1MTEwNS4wIKXMDSoASAFQAw%3D%3D"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-sm text-primary hover:text-accent transition-colors mt-1 inline-block"
@@ -114,11 +114,11 @@ const ContactSection = () => {
                     <h3 className="text-xl font-semibold text-foreground mb-2">
                       Horario
                     </h3>
-                    <p className="text-foreground">Lunes a Sábado</p>
-                    <p className="text-foreground font-semibold">10:00 - 21:00</p>
-                    <p className="text-sm text-muted-foreground mt-1">
-                      Domingos cerrado
-                    </p>
+                    <div className="text-foreground">
+                      <p className="text-base font-semibold">Lun–Vie 10:00–20:00</p>
+                      <p className="text-base font-semibold">Sáb 10:00–17:00</p>
+                      <p className="text-sm text-muted-foreground">Domingo cerrado</p>
+                    </div>
                   </div>
                 </div>
               </CardContent>
@@ -127,7 +127,7 @@ const ContactSection = () => {
             {/* Map */}
             <div className="rounded-2xl overflow-hidden shadow-card h-64">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.8688945668883!2d-0.3763878!3d39.4699075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f4cf0efb06f%3A0x0!2zMznCsDI4JzExLjciTiAwwrAyMiczNS4wIlc!5e0!3m2!1ses!2ses!4v1234567890"
+                src="https://www.google.com/maps?q=39.4667141,-0.3397337&hl=es&z=19&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
